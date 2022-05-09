@@ -1,9 +1,10 @@
 import React from 'react';
+import Banner from './Banner';
 
 const Home = () => {
     return (
         <div>
-            <h1><h1>This is Home. So tai ganja khou. joto mon chai khau. ajke kono na nai</h1></h1>
+            <Banner></Banner>
         </div>
     );
 };
