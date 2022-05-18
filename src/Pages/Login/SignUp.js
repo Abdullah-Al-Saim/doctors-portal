@@ -44,43 +44,43 @@ const SignUp = () => {
                     <h2 className="text-center text-2xl font-bold">Sign Up</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
 
-                        <div class="form-control w-full max-w-xs">
-                            <label class="label">
-                                <span class="label-text">Name</span>
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Name</span>
                             </label>
 
-                            <input {...register("name", { required: { value: true, message: 'Your name is required' } })} type="text" placeholder="Your Name" class="input input-bordered w-full max-w-xs" />
-                            <label class="label">
-                                {errors.name?.type === 'required' && <span class="label-text-alt text-red-500">{errors.name.message}</span>}
+                            <input {...register("name", { required: { value: true, message: 'Your name is required' } })} type="text" placeholder="Your Name" className="input input-bordered w-full max-w-xs" />
+                            <label className="label">
+                                {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                             </label>
                         </div>
 
-                        <div class="form-control w-full max-w-xs">
-                            <label class="label">
-                                <span class="label-text">Email</span>
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Email</span>
                             </label>
 
                             {/* react-hock-form ------- email valid-------------------|*/}
 
-                            <input {...register("email", { required: { value: true, message: 'Your email is required' }, pattern: { value: /[A-Za-z]{3}/, message: 'Provide a valid Email' } })} type="email" placeholder="Your Email" class="input input-bordered w-full max-w-xs" />
-                            <label class="label">
-                                {errors.email?.type === 'required' && <span class="label-text-alt text-red-500">{errors.email.message}</span>}
-                                {errors.email?.type === 'pattern' && <span class="label-text-alt text-red-500">{errors.email.message}</span>}
+                            <input {...register("email", { required: { value: true, message: 'Your email is required' }, pattern: { value: /[A-Za-z]{3}/, message: 'Provide a valid Email' } })} type="email" placeholder="Your Email" className="input input-bordered w-full max-w-xs" />
+                            <label className="label">
+                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
 
                             </label>
                         </div>
 
-                        <div class="form-control w-full max-w-xs">
-                            <label class="label">
-                                <span class="label-text">Password</span>
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Password</span>
                             </label>
 
                             {/* react-hock-form ------- password valid-------------------|*/}
 
-                            <input {...register("password", { required: { value: true, message: 'Your Password is required' }, minLength: { value: 6, message: 'Must be 6 characters or longer' } })} type="password" placeholder="Password" class="input input-bordered w-full max-w-xs" />
-                            <label class="label">
-                                {errors.password?.type === 'required' && <span class="label-text-alt text-red-500">{errors.password.message}</span>}
-                                {errors.password?.type === 'minLength' && <span class="label-text-alt text-red-500">{errors.password.message}</span>}
+                            <input {...register("password", { required: { value: true, message: 'Your Password is required' }, minLength: { value: 6, message: 'Must be 6 characters or longer' } })} type="password" placeholder="Password" className="input input-bordered w-full max-w-xs" />
+                            <label className="label">
+                                {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
+                                {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
 
                             </label>
                         </div>

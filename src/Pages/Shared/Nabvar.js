@@ -17,7 +17,7 @@ const Nabvar = () => {
         <li><Link to="appointment">Appointment</Link></li>
         <li><Link to="reviews">Reviews</Link></li>
         <li><Link to="contact us">Contact Us</Link></li>
-        <li>{user ? <button onClick={logout} class="btn btn-ghost">Sign Out</button> : <Link to="login">Login</Link>}</li>
+        <li>{user ? <button onClick={logout} className="btn btn-ghost">Sign Out</button> : <Link to="login">Login</Link>}</li>
     </>
     return (
         <div className="navbar bg-base-100">
